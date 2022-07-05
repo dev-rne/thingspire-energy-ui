@@ -662,17 +662,6 @@ const steam = {
         }).then((res) => {
           commit("getTempModalChartData", res.data);
             });
-<<<<<<< HEAD
-          },
-      getFEMScsvDownload({ rootState, state, commit }) {
-        const siteid = rootState.factoryID;
-        const time = moment().format("YYMMDD");
-        axios.post(`${rootState.globalIP}/sub/fems_trend_csv`, {
-        siteid, devid: state.searchType === "temp" ? String(`0${state.selectFEMSDetail.devId}`) : state.selectFEMSDetail.devId, search_period: state.FEMSModalSelectKey, search_type: state.searchType
-          }).then((res) => {
-            const fileURL = window.URL.createObjectURL(new Blob([res.data]));
-            const fileLink = document.createElement("a");
-=======
     },
     getFEMScsvDownload({ rootState, state, commit }) {
       if(rootState.isLocal) {
@@ -685,7 +674,6 @@ const steam = {
         }).then((res) => {
           const fileURL = window.URL.createObjectURL(new Blob([res.data]));
           const fileLink = document.createElement("a");
->>>>>>> f419891f8048d2787404ceb7acba6b40c7002ad4
 
           fileLink.href = fileURL;
           fileLink.setAttribute("download", `${time}_${state.selectFEMSDetail.devId}.csv`);
