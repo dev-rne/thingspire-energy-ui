@@ -7,4 +7,4 @@
     2. npm run dev
 
 ### View
-    http://EUNYHE-SHIN.github.io/energy-dashboard-thingspire
+    https://dev-rne.github.io/thingsfilre-energy-ui/
