@@ -595,7 +595,7 @@ const steam = {
     getFEMSDetailModalData({ rootState, state, commit }) {
       const siteid = rootState.factoryID;
       axios.post(`${rootState.globalIP}/sub/fems_trend_graph`, {
-      siteid, devid: state.selectFEMSDetail.devId, search_period: state.FEMSModalSelectKey, search_type: state.searchType
+      siteid, devid: state.searchType === "temp" ? String(`0${state.selectFEMSDetail.devId}`) : state.selectFEMSDetail.devId, search_period: state.FEMSModalSelectKey, search_type: state.searchType
         }).then((res) => {
           commit("getTempModalChartData", res.data);
             });
@@ -604,7 +604,7 @@ const steam = {
         const siteid = rootState.factoryID;
         const time = moment().format("YYMMDD");
         axios.post(`${rootState.globalIP}/sub/fems_trend_csv`, {
-        siteid, devid: state.selectFEMSDetail.devId, search_period: state.FEMSModalSelectKey, search_type: state.searchType
+        siteid, devid: state.searchType === "temp" ? String(`0${state.selectFEMSDetail.devId}`) : state.selectFEMSDetail.devId, search_period: state.FEMSModalSelectKey, search_type: state.searchType
           }).then((res) => {
             const fileURL = window.URL.createObjectURL(new Blob([res.data]));
             const fileLink = document.createElement("a");

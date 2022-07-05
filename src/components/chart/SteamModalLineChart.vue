@@ -31,8 +31,8 @@ export default {
         }
       ];
       for(let i = 0; i < data.length; i++) {
-        dataArr[0].data.push([data[i].dev_time * 1000, data[i].act_kwh]);
-        dataArr[1].data.push([data[i].dev_time * 1000, data[i].react_kwh]);
+        dataArr[0].data.push([data[i].dev_time * 1000, data[i].in_temp]);
+        dataArr[1].data.push([data[i].dev_time * 1000, data[i].out_temp]);
       }
 
       const seriesData = [];
