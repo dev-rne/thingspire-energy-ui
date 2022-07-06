@@ -2,14 +2,15 @@
   "name": "vue-energy",
   "version": "0.1.0",
   "author": "dev-nne",
-  "homepage": "https://dev-rne.github.io/thingsfilre-energy-ui/",
+  "homepage": "https://dev-rne.github.io/thingspire-energy-ui/",
   "private": false,
   "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^6.0.1",
