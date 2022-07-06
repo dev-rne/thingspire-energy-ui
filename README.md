@@ -8,4 +8,4 @@
 
 ### View
 <img src="https://user-images.githubusercontent.com/79447026/177272854-790de2f0-296a-43e5-941d-c464d80d3a66.gif" />
-> https://dev-rne.github.io/thingsfilre-energy-ui/
+> https://dev-rne.github.io/thingspire-energy-ui/
