@@ -7,5 +7,9 @@
     2. npm run dev
 
 ### View
-<img src="https://user-images.githubusercontent.com/79447026/177272854-790de2f0-296a-43e5-941d-c464d80d3a66.gif" />
 > https://dev-rne.github.io/thingspire-energy-ui/
+
+<img src="https://user-images.githubusercontent.com/79447026/177954617-1048a84a-ea7d-44b2-ab8e-a19c8171d871.gif" />
+<img src="https://user-images.githubusercontent.com/79447026/177954605-ebfa3287-205d-4653-8ff8-687a55edf49a.gif" />
+<img src="https://user-images.githubusercontent.com/79447026/177954814-4aeba688-c330-4167-8c3f-ac34b4f5bf93.gif" />
+
